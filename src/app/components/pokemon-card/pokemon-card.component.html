@@ -1,0 +1,15 @@
+<ion-card [ngClass]="pokemon.type">
+    <ion-card-header>
+        <ion-card-subtitle>
+            <p>{{ pokemon.id }}</p>
+        </ion-card-subtitle>
+        <ion-img [src]="pokemon.sprite" (ionError)="handleImgError($event)" alt="{{ pokemon.name }} Sprite"
+            class="card-img img-pokemon"></ion-img>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-label>
+            <h2>{{ pokemon.name | titlecase }}</h2>
+            <ion-img [src]="'assets/icon/' + pokemon.type + '.png'" alt="{{ pokemon.type }}" class="img-type"></ion-img>
+        </ion-label>
+    </ion-card-content>
+</ion-card>

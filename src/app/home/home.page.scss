@@ -1,0 +1,72 @@
+ion-header {
+  ion-toolbar {
+    --background: #211e50 !important;
+    background-size: cover;
+    background-position: center;
+    height: 70px;
+
+    ion-title {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-family: "Teko", sans-serif;
+      font-size: 2em;
+
+      ion-button {
+        font-family: "Teko", sans-serif;
+        font-size: 12px;
+        margin-right: 10px;
+        width: 50px;
+        transform: rotate(340deg);
+      }
+    }
+  }
+}
+
+ion-content {
+  --background: #34343e;
+}
+
+.img-logo {
+  max-width: 120px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.poke-card {
+  height: 75vh;
+  background: transparent;
+  margin: 10px 0;
+}
+
+#botones {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 80px;
+  bottom: 0;
+  margin: 0;
+  --background: rgb(223, 220, 220);
+}
+
+.btns {
+  margin: 0;
+  width: 25vw;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 2px;
+  border-inline: 1px solid rgb(206, 206, 206);
+}
+
+.img-type {
+  height: 75px;
+}

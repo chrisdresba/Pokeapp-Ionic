@@ -1,0 +1,36 @@
+<ion-content>
+  <app-spinner></app-spinner>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        <ion-button color="primary" (click)="getRandomPokemon()">New Team</ion-button>
+      </ion-title>
+      <img class="img-logo" src="assets/icon/pokemon.png" srcset="">
+    </ion-toolbar>
+  </ion-header>
+  <ion-card-content id="container">
+    <ion-card class="poke-card" *ngIf="!view">
+      <app-default-card></app-default-card>
+    </ion-card>
+    <ion-card class="poke-card" *ngIf="view">
+      <app-pokemon-card [pokemon]="poke"></app-pokemon-card>
+    </ion-card>
+  </ion-card-content>
+</ion-content>
+
+<ion-card id="botones">
+  <div class="btns">
+    <ion-img [src]="'assets/icon/water.png'" (click)="selectTypePokemon('water')" alt="water"
+      class="img-type"></ion-img>
+  </div>
+  <div class="btns">
+    <ion-img [src]="'assets/icon/electric.png'" (click)="selectTypePokemon('electric')" alt="electric"
+      class="img-type"></ion-img>
+  </div>
+  <div class="btns">
+    <ion-img [src]="'assets/icon/fire.png'" (click)="selectTypePokemon('fire')" alt="fire" class="img-type"></ion-img>
+  </div>
+  <div class="btns">
+    <ion-img [src]="'assets/icon/rock.png'" (click)="selectTypePokemon('rock')" alt="rock" class="img-type"></ion-img>
+  </div>
+</ion-card>
